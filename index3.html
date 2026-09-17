@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Veerayut Attawatewicha</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Bebas Neue for Title headings and Bai Jamjuree for Thai text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bai+Jamjuree:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: 'Bai Jamjuree', sans-serif;
+      background-color: #010f48;
+    }
+    .font-bebas {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- Header / Navigation -->
+  <header class="w-full border-b border-blue-950/40 px-8 py-5 flex items-center justify-between">
+    <div class="font-bebas text-xl md:text-2xl tracking-widest">
+      VEERAYUT ATTAWATEWICHA
+    </div>
+    <nav class="flex items-center space-x-6 text-sm text-gray-300">
+      <a href="#work" class="hover:text-white">Work</a>
+      <a href="#about" class="hover:text-white">About</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Section 1: Hero -->
+  <section class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+    <div class="space-y-6 max-w-lg">
+      <h1 class="font-bebas text-6xl md:text-8xl leading-none tracking-wider">
+        HI, I AM<br>VEERAYUT C.
+      </h1>
+      <p class="text-neutral-300 text-sm leading-relaxed">
+        นักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์จากประเทศไทย ที่มีความหลงใหลในการสร้าง เว็บไซต์ที่เข้าถึงได้และเป็นมิตรกับผู้ใช้
+      </p>
+
+      <div class="flex items-center space-x-3 pt-4">
+        <a href="#contact" class="bg-[#7da0fa] hover:bg-[#6b90f5] text-gray-900 font-semibold text-xs tracking-wider px-6 py-3 rounded-full flex items-center gap-2 uppercase">
+          Contact Me <span class="w-2 h-2 rounded-full bg-gray-900"></span>
+        </a>
+        <a href="#" class="w-10 h-10 rounded-full bg-blue-950/80 border border-blue-800 flex items-center justify-center text-sm hover:border-white transition">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="w-10 h-10 rounded-full bg-blue-950/80 border border-blue-800 flex items-center justify-center text-sm hover:border-white transition">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Image Rounded -->
+    <div class="w-72 md:w-96 h-96 md:h-[450px] rounded-3xl overflow-hidden shadow-2xl border border-blue-900/30">
+      <img 
+        src="https://media.tenor.com/0C4ixY9-0_AAAAAe/affe.png" 
+        alt="Veerayut Hero" 
+        class="w-full h-full object-cover"
+      >
+    </div>
+  </section>
+
+  <!-- Section 2: About Me -->
+  <section id="about" class="border-t border-blue-900/40 max-w-6xl mx-auto px-6 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-14">
+      <h2 class="font-bebas text-5xl md:text-6xl">ABOUT ME</h2>
+
+      <div class="space-y-6">
+        <h3 class="text-lg md:text-xl font-medium leading-relaxed">
+          ผมเป็นนักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์ที่ทำงานอยู่ในกรุงเทพฯ กำลังมองหาโอกาสที่น่าตื่นเต้นในการ ทำงานมีพื้นฐานการศึกษาด้าน วิศวกรรมซอฟต์แวร์
+        </h3>
+        <p class="text-xs md:text-sm text-neutral-300 leading-relaxed">
+          ชอบให้ความสำคัญกับการเข้าถึง (accessibility) เมื่อพัฒนาเว็บไซต์ มีความกระตือรือร้นและอยากรู้ อยากเห็นเกี่ยวกับการแก้ปัญหาต่างๆ ปัจจุบันกำลังศึกษาเรียนรู้เกี่ยวกับ React.js และการออกแบบเว็บไซต์เล็กน้อยเมื่อไม่ได้เขียนโปรแกรม ดิฉัน/ผมชอบเล่นฟุตบอล ถ่ายภาพ และเล่นเกม FIFA, Diablo กำลังเรียนรู้เพิ่มเติมเพื่อพัฒนาทักษะอยู่เสมอ
+        </p>
+
+        <div class="flex items-center space-x-3 pt-2">
+          <a href="#" class="bg-[#7da0fa] hover:bg-[#6b90f5] text-gray-900 font-semibold text-xs tracking-wider px-6 py-3 rounded-full flex items-center gap-2 uppercase">
+            Download Resume <span class="w-2 h-2 rounded-full bg-gray-900"></span>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full bg-blue-950/80 border border-blue-800 flex items-center justify-center text-sm hover:border-white transition">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full bg-blue-950/80 border border-blue-800 flex items-center justify-center text-sm hover:border-white transition">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Large Image -->
+    <div class="w-full h-80 md:h-[460px] rounded-3xl overflow-hidden shadow-2xl border border-blue-900/30">
+      <img 
+        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80" 
+        alt="About Me Workspace" 
+        class="w-full h-full object-cover"
+      >
+    </div>
+  </section>
+
+  <!-- Section 3: My Capabilities -->
+  <section class="border-t border-blue-900/40 max-w-6xl mx-auto px-6 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      <h2 class="font-bebas text-5xl md:text-6xl">MY CAPABILITIES</h2>
+
+      <div class="space-y-6">
+        <p class="text-xs md:text-sm text-neutral-300 leading-relaxed">
+          ผมมองหาโอกาสในการเพิ่มทักษะใหม่ๆ อยู่เสมอ ทั้งการพัฒนาฟรอนท์เอนด์ แบล็กเอนด์ การออกแบบ UX/UI ฐานข้อมูล
+        </p>
+
+        <!-- Skill Badges -->
+        <div class="flex flex-wrap gap-3">
+          <span class="px-6 py-2 rounded-full border border-blue-800/80 bg-blue-950/60 text-xs font-semibold uppercase tracking-wider">HTML</span>
+          <span class="px-6 py-2 rounded-full border border-blue-800/80 bg-blue-950/60 text-xs font-semibold uppercase tracking-wider">CSS</span>
+          <span class="px-6 py-2 rounded-full border border-blue-800/80 bg-blue-950/60 text-xs font-semibold uppercase tracking-wider">JAVASCRIPT</span>
+          <span class="px-6 py-2 rounded-full border border-blue-800/80 bg-blue-950/60 text-xs font-semibold uppercase tracking-wider">FLUTTER</span>
+          <span class="px-6 py-2 rounded-full border border-blue-800/80 bg-blue-950/60 text-xs font-semibold uppercase tracking-wider">DART</span>
+          <span class="px-6 py-2 rounded-full border border-blue-800/80 bg-blue-950/60 text-xs font-semibold uppercase tracking-wider">IOT</span>
+          <span class="px-6 py-2 rounded-full border border-blue-800/80 bg-blue-950/60 text-xs font-semibold uppercase tracking-wider">REACT</span>
+          <span class="px-6 py-2 rounded-full border border-blue-800/80 bg-blue-950/60 text-xs font-semibold uppercase tracking-wider">DATABASE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: My Experience -->
+  <section class="border-t border-blue-900/40 max-w-6xl mx-auto px-6 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      <h2 class="font-bebas text-5xl md:text-6xl">MY EXPERIENCE</h2>
+
+      <div class="space-y-10">
+        <!-- Exp 1 -->
+        <div class="border-b border-blue-900/40 pb-8">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-base font-semibold text-white">Freelance Developer</h3>
+            <span class="text-xs text-neutral-400">Nov 2023 — Present</span>
+          </div>
+          <p class="text-xs text-neutral-300 leading-relaxed">
+            พัฒนาและปรับปรุงส่วนติดต่อผู้ใช้สำหรับเว็บแอปพลิเคชันโดยใช้ React.js ทำงานร่วมกับทีมออกแบบ UX/UI เพื่อสร้างประสบการณ์ผู้ใช้ที่น่าประทับใจปรับปรุงความเร็วในการโหลดเว็บไซต์ด้วยเทคนิคการเพิ่มประสิทธิภาพต่างๆร่วมพัฒนาและดูแลไลบรารีคอมโพเนนต์ภายในองค์กร
+          </p>
+        </div>
+
+        <!-- Exp 2 -->
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-base font-semibold text-white">Front-End Intern</h3>
+            <span class="text-xs text-neutral-400">Sep 2023 — Nov 2023</span>
+          </div>
+          <p class="text-xs text-neutral-300 leading-relaxed mb-2">
+            พัฒนาเว็บไซต์ลูกค้าโดยใช้ HTML, CSS และ JavaScript
+          </p>
+          <p class="text-xs text-neutral-300 leading-relaxed mb-2">
+            ช่วยปรับปรุงการเข้าถึง (Accessibility) ของเว็บไซต์ให้สอดคล้องกับมาตรฐาน WCAG
+          </p>
+          <p class="text-xs text-neutral-300 leading-relaxed">
+            ทำงานร่วมกับทีมแบ็คเอนด์เพื่อเชื่อมต่อ API
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Let's Connect -->
+  <section id="contact" class="border-t border-blue-900/40 max-w-6xl mx-auto px-6 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Left Info -->
+      <div class="space-y-6">
+        <h2 class="font-bebas text-5xl md:text-6xl">LET'S CONNECT</h2>
+        <div class="text-xs md:text-sm text-neutral-300 space-y-1">
+          <p>Say hello at <a href="mailto:www.totoyou@gmail.com" class="underline hover:text-white">www.totoyou@gmail.com</a></p>
+          <p>For more info, here's my <a href="#" class="underline hover:text-white">resume</a></p>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex items-center space-x-5 text-lg text-neutral-300 pt-2">
+          <a href="#" class="hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="hover:text-white"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Form -->
+      <form class="space-y-5" onsubmit="event.preventDefault();">
+        <div>
+          <label class="block text-xs text-neutral-300 mb-2">Name</label>
+          <input type="text" class="w-full bg-[#050c26] border border-blue-950 rounded p-3 text-sm text-white focus:outline-none focus:border-blue-500">
+        </div>
+        <div>
+          <label class="block text-xs text-neutral-300 mb-2">Email</label>
+          <input type="email" class="w-full bg-[#050c26] border border-blue-950 rounded p-3 text-sm text-white focus:outline-none focus:border-blue-500">
+        </div>
+        <div>
+          <label class="block text-xs text-neutral-300 mb-2">Subject</label>
+          <input type="text" class="w-full bg-[#050c26] border border-blue-950 rounded p-3 text-sm text-white focus:outline-none focus:border-blue-500">
+        </div>
+        <div>
+          <label class="block text-xs text-neutral-300 mb-2">Message</label>
+          <textarea rows="5" class="w-full bg-[#050c26] border border-blue-950 rounded p-3 text-sm text-white focus:outline-none focus:border-blue-500"></textarea>
+        </div>
+        <button type="submit" class="bg-[#7da0fa] hover:bg-[#6b90f5] text-gray-900 font-bold text-xs uppercase px-8 py-3 rounded-full">
+          SUBMIT
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-blue-950/40 py-8 text-center text-xs text-neutral-400">
+    © 2026 Created by SAU-Dev-Team
+  </footer>
+
+</body>
+</html>

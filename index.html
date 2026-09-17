@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - 6619410051</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background-color: #0d0d0e;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      flex-direction: column;
+      min-height: calc(100vh - 48px);
+      justify-content: space-between;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #17181c;
+      border: 1px solid #23242a;
+      border-radius: 9999px;
+      padding: 12px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto 60px auto;
+      width: fit-content;
+      gap: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: #a1a1aa;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #ffffff;
+    }
+
+    .nav-socials {
+      display: flex;
+      gap: 16px;
+      border-left: 1px solid #2a2b32;
+      padding-left: 20px;
+    }
+
+    .nav-socials a {
+      color: #71717a;
+      font-size: 14px;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-socials a:hover {
+      color: #ffffff;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      margin: auto 0;
+    }
+
+    .hero-content {
+      flex: 1;
+      max-width: 540px;
+    }
+
+    .hero-title-id {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .hero-title-name {
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+      color: #f4f4f5;
+    }
+
+    .hero-desc {
+      color: #8e8e93;
+      font-size: 13.5px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+      font-family: monospace, sans-serif;
+    }
+
+    .btn-green {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #439600;
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      box-shadow: 0 0 25px rgba(67, 150, 0, 0.45);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .btn-green:hover {
+      background-color: #4da800;
+      transform: translateY(-2px);
+    }
+
+    /* Profile Image */
+    .hero-avatar {
+      flex-shrink: 0;
+    }
+
+    .avatar-wrapper {
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #1f2024;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+
+    .avatar-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Worked With Footer Section */
+    .worked-with {
+      margin-top: 60px;
+      padding-bottom: 20px;
+    }
+
+    .worked-title {
+      color: #71717a;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      font-family: monospace;
+    }
+
+    .brand-cards {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .brand-card {
+      background-color: #121316;
+      border: 1px solid #1c1d22;
+      padding: 16px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #636674;
+      font-size: 14px;
+      font-weight: 600;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .brand-card:hover {
+      border-color: #2f323d;
+      color: #a1a1aa;
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .hero-desc {
+        margin: 0 auto 28px auto;
+      }
+      .navbar {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+        border-radius: 16px;
+      }
+      .brand-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">Case Studies</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Recent work</a>
+        <a href="#">Get In Touch</a>
+      </div>
+      <div class="nav-socials">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-behance"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </nav>
+
+    <!-- Hero Content -->
+    <main class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title-id">6619410051</h1>
+        <h2 class="hero-title-name">Veerayut Attawatewicha</h2>
+        <p class="hero-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rem odit labore unde nemo omnis sequi hic sit laudantium repellendus recusandae vitae ea laborum, ipsa nisi eos autem.
+        </p>
+        <a href="#" class="btn-green">
+          Let's get started &gt;
+        </a>
+      </div>
+
+      <div class="hero-avatar">
+        <div class="avatar-wrapper">
+          <img src="https://media.tenor.com/_7f2Ha88-I8AAAAe/egg-speed-meme.png" alt="Profile">
+        </div>
+      </div>
+    </main>
+
+    <!-- Brands -->
+    <section class="worked-with">
+      <p class="worked-title">Worked with</p>
+      <div class="brand-cards">
+        <div class="brand-card"><i class="fa-solid fa-cloud"></i> ClickUp</div>
+        <div class="brand-card"><i class="fa-brands fa-dropbox"></i> Dropbox</div>
+        <div class="brand-card"><i class="fa-solid fa-receipt"></i> PAYCHEX</div>
+        <div class="brand-card"><i class="fa-solid fa-atom"></i> elastic</div>
+        <div class="brand-card"><i class="fa-brands fa-stripe"></i> stripe</div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
